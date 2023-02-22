@@ -63,113 +63,37 @@ body{
 
 .container-content .container-graphic{
     display: flex;
+    justify-content: space-between;
+}
+.chart{
+    display: flex;
     flex-direction: column;
-    height: 200px;
-    justify-content: end;
-    margin-bottom: 30px;
+    height: 12em;
+    gap: 0.5em;
+    justify-content: center;
+    align-items: center;
 }
-.container-content .container-graphic .graphics{
+
+.chart-wrapper{
+    width: 2.5em;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: end;
-    
+    align-items: flex-end;
+    height: 90%;
 }
-.container-content .container-graphic .graphic-week{
-    display: flex;
-    flex-direction: row;
-    gap: 35px;
-    align-items: end;
-    margin-left: 10px;
-    
-}
-.container-content .container-graphic .graphic{
-    max-width: 40px;
+.chart-wrapper .chart-value{
+    height: var(--height);
     background-color: hsl(10, 79%, 65%);
-    border-radius: 5px;
-    margin: 0px;
-    cursor: pointer;
+    width: 100%;
+    border-radius: 0.25em;
 }
-.container-content .container-graphic .graphic:hover{
+.chart-wrapper .chart-value.active{
     background-color: hsl(186, 34%, 60%);
 }
-
-
-.container-content .container-graphic .graphic.mon{
-    height: 30px;
-}
-.container-content .container-graphic .graphic.tue{
-    height: 60px;
-}
-.container-content .container-graphic  .graphic.wed{
-    height: 100px;
-}
-.container-content .container-graphic .graphic.thu{
-    height: 50px;
-}
-.container-content .container-graphic .graphic.fri{
-    height: 40px;
-}
-.container-content .container-graphic .graphic.sat{
-    height: 80px;
-}
-.container-content .container-graphic .graphic.sun{
-    height: 40px;
-}
-
-.container-content .container-graphic .graphic.mon::after{
-    content: "mon";
-    position: relative;
-    bottom: -30px;
+.chart-title{
+    font-size: 0.8rem;
     color: hsl(28, 10%, 53%);
- }
-.container-content .container-graphic .graphic.tue::after{
-   content: "tue";
-   position: relative;
-   bottom: -60px;
-   left: 5px;
-   color: hsl(28, 10%, 53%);
+    margin-bottom: 10px;
 }
-
-.container-content .container-graphic .graphic.wed::after{
-   content: "wed";
-   position: relative;
-   bottom: -100px;
-   color: hsl(28, 10%, 53%);
-}
-
-.container-content .container-graphic .graphic.thu::after{
-   content: "thu";
-   position: relative;
-   bottom: -50px;
-   left: 5px;
-   color: hsl(28, 10%, 53%);
-}
-.container-content .container-graphic .graphic.fri::after{
-   content: "fri";
-   position: relative;
-   bottom: -40px;
-   left: 10px;
-   color: hsl(28, 10%, 53%);
-}
-.container-content .container-graphic .graphic.sat::after{
-   content: "sat";
-   position: relative;
-   bottom: -80px;
-   left: 5px;
-   color: hsl(28, 10%, 53%);
-}
-
-.container-content .container-graphic .graphic.sun::after{
-   content: "sun";
-   position: relative;
-   bottom: -40px;
-   left: 5px;
-   color: hsl(28, 10%, 53%);
-}
-
-
-
 
 
 hr{
