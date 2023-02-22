@@ -8,7 +8,8 @@ const data = fetch('../data.json')
     .catch(e => console.log(e))
 
 data.then(data => {
-    data.forEach(item => {
+    data.forEach((item) => {
+        
         let chart = document.createElement('div');
         chart.classList.add('chart');
         const height = item.amount / 7;
