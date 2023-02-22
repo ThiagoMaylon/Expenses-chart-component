@@ -1,5 +1,214 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans";
+}
+
+body{
+    background-color: hsl(27, 66%, 92%);
+    font-size: 18px;
+}
+.container{
+    max-width: 500px;
+    min-width: 200px;
+    margin: auto;
+    height: calc(100vh - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .container-balance{
+    background-color: hsl(10, 79%, 65%);
+    width: 100%;
+    border-radius: 15px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: hsl(27, 66%, 92%);
+}
+.container-balance h2{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.container-balance p{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.container-balance img{
+    width: 4rem;
+}
+
+.container-content{
+    background-color: #FFFFFF;
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 10px;
+    border-radius: 15px;
+    padding: 15px 20px;
+}
+
+.container-content h1{
+    color: hsl(25, 47%, 15%);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.container-content .container-graphic{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: end;
+    margin-bottom: 30px;
+}
+.container-content .container-graphic .graphics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
     
+}
+.container-content .container-graphic .graphic-week{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    align-items: end;
+    margin-left: 10px;
+    
+}
+.container-content .container-graphic .graphic{
+    max-width: 40px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    margin: 0px;
+    cursor: pointer;
+}
+.container-content .container-graphic .graphic:hover{
+    background-color: hsl(186, 34%, 60%);
+}
+
+
+.container-content .container-graphic .graphic.mon{
+    height: 30px;
+}
+.container-content .container-graphic .graphic.tue{
+    height: 60px;
+}
+.container-content .container-graphic  .graphic.wed{
+    height: 100px;
+}
+.container-content .container-graphic .graphic.thu{
+    height: 50px;
+}
+.container-content .container-graphic .graphic.fri{
+    height: 40px;
+}
+.container-content .container-graphic .graphic.sat{
+    height: 80px;
+}
+.container-content .container-graphic .graphic.sun{
+    height: 40px;
+}
+
+.container-content .container-graphic .graphic.mon::after{
+    content: "mon";
+    position: relative;
+    bottom: -30px;
+    color: hsl(28, 10%, 53%);
+ }
+.container-content .container-graphic .graphic.tue::after{
+   content: "tue";
+   position: relative;
+   bottom: -60px;
+   left: 5px;
+   color: hsl(28, 10%, 53%);
+}
+
+.container-content .container-graphic .graphic.wed::after{
+   content: "wed";
+   position: relative;
+   bottom: -100px;
+   color: hsl(28, 10%, 53%);
+}
+
+.container-content .container-graphic .graphic.thu::after{
+   content: "thu";
+   position: relative;
+   bottom: -50px;
+   left: 5px;
+   color: hsl(28, 10%, 53%);
+}
+.container-content .container-graphic .graphic.fri::after{
+   content: "fri";
+   position: relative;
+   bottom: -40px;
+   left: 10px;
+   color: hsl(28, 10%, 53%);
+}
+.container-content .container-graphic .graphic.sat::after{
+   content: "sat";
+   position: relative;
+   bottom: -80px;
+   left: 5px;
+   color: hsl(28, 10%, 53%);
+}
+
+.container-content .container-graphic .graphic.sun::after{
+   content: "sun";
+   position: relative;
+   bottom: -40px;
+   left: 5px;
+   color: hsl(28, 10%, 53%);
+}
+
+
+
+
+
+hr{
+    border: none;
+    border-bottom: 1px solid hsl(28, 10%, 53%);
+    margin-bottom: 30px;
+}
+
+.container-result{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-result > .result-left p{
+    font-size: 2.3rem;
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+}
+.container-result > .result-left span{
+    font-size: 1rem;
+    color: hsl(28, 10%, 53%);
+    font-weight: 400;
+}
+.container-result > .result-right p{
+    font-size: 1rem;
+    color: hsl(25, 47%, 15%);
+    font-weight: 700;
+    text-align: end;
+}
+.container-result > .result-right span{
+    font-size: 1rem;
+    color: hsl(28, 10%, 53%);
+    font-weight: 400;
+}
+
+
+@media (max-width: 410px) {
+    .container-content h1{
+        font-size: 1.5rem;
+    }
 }
