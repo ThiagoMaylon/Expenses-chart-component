@@ -13,11 +13,13 @@ data.then(data => {
         chart.classList.add('chart');
         const height = item.amount / 7;
         let value = "";
+        
         if(item.day == "wed"){
-            value=`<div class="chart-value active" style="--height: ${height}em"></div>`
+            value=`<div class="chart-value active" style="--height: ${height}em"><div class="amount">${item.amount}</div></div>`
         }else{
-            value=`<div class="chart-value" style="--height: ${height}em"></div>`
+            value=`<div class="chart-value" style="--height: ${height}em"><div class="amount">${item.amount}</div></div>`
         }
+
         chart.innerHTML = `
             <div class="chart-wrapper">
             ${value}
@@ -27,3 +29,4 @@ data.then(data => {
         containerGrafic.appendChild(chart);
     });
 })
+

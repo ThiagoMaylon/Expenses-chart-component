@@ -72,6 +72,7 @@ body{
     gap: 0.5em;
     justify-content: center;
     align-items: center;
+    
 }
 
 .chart-wrapper{
@@ -79,6 +80,7 @@ body{
     display: flex;
     align-items: flex-end;
     height: 90%;
+    cursor: pointer;
 }
 .chart-wrapper .chart-value{
     height: var(--height);
@@ -94,8 +96,20 @@ body{
     color: hsl(28, 10%, 53%);
     margin-bottom: 10px;
 }
-
-
+.amount{
+    background-color: hsl(25, 47%, 15%);
+    color: hsl(186, 34%, 60%);
+    opacity: 0;
+    justify-content: center;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+    top: -30px;
+}
+.active{
+    opacity: 1;
+}
 hr{
     border: none;
     border-bottom: 1px solid hsl(28, 10%, 53%);
